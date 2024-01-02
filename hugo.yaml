@@ -1,0 +1,70 @@
+baseURL : 'https://example.org/'
+languageCode : 'zh-cn'
+title : 'My  Site'
+theme : 'hugo-theme-stack'
+cleanDestinationDir : true
+# contentDir : 'content'
+staticDir: 'static'
+copyright : 'All rights reserved .'
+defaultContentLanguage : "zh-cn"
+hasCJKLanguage : true
+paginate: 5
+# paginatePath : "page"
+timeZone : 'Asia/Shanghai'
+
+permalinks: # 会忽略符号
+    # post: /p/:slug/
+    # /:year/:month/:title/
+    posts: /p/:title/
+    menu_entry: /:slug/ # item in left sidebar
+
+frontmatter:
+  date:
+  - date
+  lastmod:
+  - lastmod
+
+sectionPagesMenu:  main
+
+
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+
+menu:
+#   main:
+#   - name: HomePage
+#     pageRef: /
+#     weight: 10
+#     params:
+#       icon: home
+#   - name: Install
+#     pageRef: /p/Install/
+#     weight: 20
+#   - name: Services
+#     pageRef: /services
+#     weight: 30
+#   footer:
+#   - name: Terms
+#     pageRef: /terms
+#     weight: 10
+#   - name: Privacy
+#     pageRef: /privacy
+#     weight: 20
+  social:
+  - identifier: github
+    name: GitHub
+    url: https://github.com/DingSJ101
+    params:
+        icon: brand-github
+
+  - identifier: twitter
+    name: Twitter
+    url: https://twitter.com
+    params:
+        icon: brand-twitter
+
+
+
+    
